@@ -3,6 +3,7 @@ package com.example.demo.servise;
 import com.example.demo.model.Users;
 import com.example.demo.repo.UserRepo;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -12,13 +13,13 @@ import java.util.Map;
 @AllArgsConstructor
 public class UserServiceImp implements UserService {
 
-    private UserRepo userRepo;
+   private UserRepo userRepo;
 
 
     @Override
     public Long save(Users user) {
 
-        return userRepo.save(user).getId();
+       return userRepo.save(user).getId();
     }
 
     @Override

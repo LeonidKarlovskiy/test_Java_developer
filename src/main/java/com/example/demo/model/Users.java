@@ -24,9 +24,9 @@ public class Users {
     private String surName;
     @Column(name = "email",unique = true, nullable = false)
     private String email;
-    @Column(name = "imageUrl",unique = false, nullable = false)
+    @Column(name = "imageUrl", nullable = false)
     private String imageUrl;
-    @Column(name = "status",unique = false, nullable = false)
+    @Column(name = "status", nullable = false)
     private String status;
 
 }
